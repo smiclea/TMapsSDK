@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[TTileLayer mapIsPanning:]:TTileLayer.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[TMap panRecognized:]:TMap.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

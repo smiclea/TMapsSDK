@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180D290C193CCAEF00FDB0F1 /* TLatLng.m in Sources */ = {isa = PBXBuildFile; fileRef = 180D290B193CCAEF00FDB0F1 /* TLatLng.m */; };
+		183E0ECE193B0A4B006D41EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183E0ECD193B0A4B006D41EA /* Foundation.framework */; };
+		183E0ED0193B0A4B006D41EA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183E0ECF193B0A4B006D41EA /* CoreGraphics.framework */; };
+		183E0ED2193B0A4B006D41EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183E0ED1193B0A4B006D41EA /* UIKit.framework */; };
+		183E0ED8193B0A4B006D41EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 183E0ED6193B0A4B006D41EA /* InfoPlist.strings */; };
+		183E0EDA193B0A4B006D41EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E0ED9193B0A4B006D41EA /* main.m */; };
+		183E0EDE193B0A4B006D41EA /* TAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E0EDD193B0A4B006D41EA /* TAppDelegate.m */; };
+		183E0EE1193B0A4B006D41EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183E0EDF193B0A4B006D41EA /* Main.storyboard */; };
+		183E0EE4193B0A4B006D41EA /* TViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E0EE3193B0A4B006D41EA /* TViewController.m */; };
+		183E0EE6193B0A4B006D41EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183E0EE5193B0A4B006D41EA /* Images.xcassets */; };
+		183E0EED193B0A4B006D41EA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183E0EEC193B0A4B006D41EA /* XCTest.framework */; };
+		183E0EEE193B0A4B006D41EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183E0ECD193B0A4B006D41EA /* Foundation.framework */; };
+		183E0EEF193B0A4B006D41EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183E0ED1193B0A4B006D41EA /* UIKit.framework */; };
+		183E0EF7193B0A4B006D41EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 183E0EF5193B0A4B006D41EA /* InfoPlist.strings */; };
+		183E0EF9193B0A4B006D41EA /* TMapsSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E0EF8193B0A4B006D41EA /* TMapsSDKTests.m */; };
+		183E0F0F193B1A55006D41EA /* TMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E0F0E193B1A55006D41EA /* TMap.m */; };
+		189D00E6193CDC3900A07027 /* TBaseLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D00E1193CDC3900A07027 /* TBaseLayer.m */; };
+		189D00E7193CDC3900A07027 /* TTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D00E3193CDC3900A07027 /* TTile.m */; };
+		189D00E8193CDC3900A07027 /* TTileLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D00E5193CDC3900A07027 /* TTileLayer.m */; };
+		189D00ED193CDCA600A07027 /* TMapEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D00EC193CDCA600A07027 /* TMapEvents.m */; };
+		189D00F0193CDD0B00A07027 /* TMessager.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D00EF193CDD0B00A07027 /* TMessager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		183E0EF0193B0A4B006D41EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 183E0EC2193B0A4B006D41EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 183E0EC9193B0A4B006D41EA;
+			remoteInfo = TMapsSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		180D290A193CCAEF00FDB0F1 /* TLatLng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLatLng.h; path = Model/TLatLng.h; sourceTree = "<group>"; };
+		180D290B193CCAEF00FDB0F1 /* TLatLng.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLatLng.m; path = Model/TLatLng.m; sourceTree = "<group>"; };
+		183E0ECA193B0A4B006D41EA /* TMapsSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMapsSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		183E0ECD193B0A4B006D41EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		183E0ECF193B0A4B006D41EA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		183E0ED1193B0A4B006D41EA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		183E0ED5193B0A4B006D41EA /* TMapsSDK-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TMapsSDK-Info.plist"; sourceTree = "<group>"; };
+		183E0ED7193B0A4B006D41EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		183E0ED9193B0A4B006D41EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		183E0EDB193B0A4B006D41EA /* TMapsSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TMapsSDK-Prefix.pch"; sourceTree = "<group>"; };
+		183E0EDC193B0A4B006D41EA /* TAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAppDelegate.h; sourceTree = "<group>"; };
+		183E0EDD193B0A4B006D41EA /* TAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAppDelegate.m; sourceTree = "<group>"; };
+		183E0EE0193B0A4B006D41EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		183E0EE2193B0A4B006D41EA /* TViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TViewController.h; sourceTree = "<group>"; };
+		183E0EE3193B0A4B006D41EA /* TViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TViewController.m; sourceTree = "<group>"; };
+		183E0EE5193B0A4B006D41EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		183E0EEB193B0A4B006D41EA /* TMapsSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMapsSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		183E0EEC193B0A4B006D41EA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		183E0EF4193B0A4B006D41EA /* TMapsSDKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TMapsSDKTests-Info.plist"; sourceTree = "<group>"; };
+		183E0EF6193B0A4B006D41EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		183E0EF8193B0A4B006D41EA /* TMapsSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMapsSDKTests.m; sourceTree = "<group>"; };
+		183E0F0D193B1A55006D41EA /* TMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMap.h; path = /Users/sergiuoxigen/Desktop/TMapsSDK/TMapsSDK/Views/TMap.h; sourceTree = "<absolute>"; };
+		183E0F0E193B1A55006D41EA /* TMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TMap.m; path = /Users/sergiuoxigen/Desktop/TMapsSDK/TMapsSDK/Views/TMap.m; sourceTree = "<absolute>"; };
+		189D00E0193CDC3900A07027 /* TBaseLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBaseLayer.h; path = Views/Layers/TBaseLayer.h; sourceTree = "<group>"; };
+		189D00E1193CDC3900A07027 /* TBaseLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBaseLayer.m; path = Views/Layers/TBaseLayer.m; sourceTree = "<group>"; };
+		189D00E2193CDC3900A07027 /* TTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTile.h; path = Views/Layers/TTile.h; sourceTree = "<group>"; };
+		189D00E3193CDC3900A07027 /* TTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTile.m; path = Views/Layers/TTile.m; sourceTree = "<group>"; };
+		189D00E4193CDC3900A07027 /* TTileLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTileLayer.h; path = Views/Layers/TTileLayer.h; sourceTree = "<group>"; };
+		189D00E5193CDC3900A07027 /* TTileLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTileLayer.m; path = Views/Layers/TTileLayer.m; sourceTree = "<group>"; };
+		189D00EB193CDCA600A07027 /* TMapEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapEvents.h; sourceTree = "<group>"; };
+		189D00EC193CDCA600A07027 /* TMapEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMapEvents.m; sourceTree = "<group>"; };
+		189D00EE193CDD0B00A07027 /* TMessager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMessager.h; sourceTree = "<group>"; };
+		189D00EF193CDD0B00A07027 /* TMessager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMessager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		183E0EC7193B0A4B006D41EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				183E0ED0193B0A4B006D41EA /* CoreGraphics.framework in Frameworks */,
+				183E0ED2193B0A4B006D41EA /* UIKit.framework in Frameworks */,
+				183E0ECE193B0A4B006D41EA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		183E0EE8193B0A4B006D41EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				183E0EED193B0A4B006D41EA /* XCTest.framework in Frameworks */,
+				183E0EEF193B0A4B006D41EA /* UIKit.framework in Frameworks */,
+				183E0EEE193B0A4B006D41EA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		180D2901193CA9AC00FDB0F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				189D00EA193CDCA600A07027 /* Events */,
+				180D290A193CCAEF00FDB0F1 /* TLatLng.h */,
+				180D290B193CCAEF00FDB0F1 /* TLatLng.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		183E0EC1193B0A4B006D41EA = {
+			isa = PBXGroup;
+			children = (
+				183E0ED3193B0A4B006D41EA /* TMapsSDK */,
+				183E0EF2193B0A4B006D41EA /* TMapsSDKTests */,
+				183E0ECC193B0A4B006D41EA /* Frameworks */,
+				183E0ECB193B0A4B006D41EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		183E0ECB193B0A4B006D41EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				183E0ECA193B0A4B006D41EA /* TMapsSDK.app */,
+				183E0EEB193B0A4B006D41EA /* TMapsSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		183E0ECC193B0A4B006D41EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				183E0ECD193B0A4B006D41EA /* Foundation.framework */,
+				183E0ECF193B0A4B006D41EA /* CoreGraphics.framework */,
+				183E0ED1193B0A4B006D41EA /* UIKit.framework */,
+				183E0EEC193B0A4B006D41EA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		183E0ED3193B0A4B006D41EA /* TMapsSDK */ = {
+			isa = PBXGroup;
+			children = (
+				183E0EDC193B0A4B006D41EA /* TAppDelegate.h */,
+				183E0EDD193B0A4B006D41EA /* TAppDelegate.m */,
+				183E0EDF193B0A4B006D41EA /* Main.storyboard */,
+				183E0EE2193B0A4B006D41EA /* TViewController.h */,
+				183E0EE3193B0A4B006D41EA /* TViewController.m */,
+				183E0EE5193B0A4B006D41EA /* Images.xcassets */,
+				183E0ED4193B0A4B006D41EA /* Supporting Files */,
+				183E0F06193B0AD6006D41EA /* Views */,
+				180D2901193CA9AC00FDB0F1 /* Model */,
+			);
+			path = TMapsSDK;
+			sourceTree = "<group>";
+		};
+		183E0ED4193B0A4B006D41EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				183E0ED5193B0A4B006D41EA /* TMapsSDK-Info.plist */,
+				183E0ED6193B0A4B006D41EA /* InfoPlist.strings */,
+				183E0ED9193B0A4B006D41EA /* main.m */,
+				183E0EDB193B0A4B006D41EA /* TMapsSDK-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		183E0EF2193B0A4B006D41EA /* TMapsSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				183E0EF8193B0A4B006D41EA /* TMapsSDKTests.m */,
+				183E0EF3193B0A4B006D41EA /* Supporting Files */,
+			);
+			path = TMapsSDKTests;
+			sourceTree = "<group>";
+		};
+		183E0EF3193B0A4B006D41EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				183E0EF4193B0A4B006D41EA /* TMapsSDKTests-Info.plist */,
+				183E0EF5193B0A4B006D41EA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		183E0F06193B0AD6006D41EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				189D00E9193CDC4F00A07027 /* Layers */,
+				183E0F0D193B1A55006D41EA /* TMap.h */,
+				183E0F0E193B1A55006D41EA /* TMap.m */,
+			);
+			name = Views;
+			path = /Users/sergiuoxigen/Desktop/TMapsSDK/TMapsSDK;
+			sourceTree = "<absolute>";
+		};
+		189D00E9193CDC4F00A07027 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				189D00E0193CDC3900A07027 /* TBaseLayer.h */,
+				189D00E1193CDC3900A07027 /* TBaseLayer.m */,
+				189D00E2193CDC3900A07027 /* TTile.h */,
+				189D00E3193CDC3900A07027 /* TTile.m */,
+				189D00E4193CDC3900A07027 /* TTileLayer.h */,
+				189D00E5193CDC3900A07027 /* TTileLayer.m */,
+			);
+			name = Layers;
+			sourceTree = "<group>";
+		};
+		189D00EA193CDCA600A07027 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				189D00EE193CDD0B00A07027 /* TMessager.h */,
+				189D00EF193CDD0B00A07027 /* TMessager.m */,
+				189D00EB193CDCA600A07027 /* TMapEvents.h */,
+				189D00EC193CDCA600A07027 /* TMapEvents.m */,
+			);
+			name = Events;
+			path = Model/Events;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		183E0EC9193B0A4B006D41EA /* TMapsSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 183E0EFC193B0A4B006D41EA /* Build configuration list for PBXNativeTarget "TMapsSDK" */;
+			buildPhases = (
+				183E0EC6193B0A4B006D41EA /* Sources */,
+				183E0EC7193B0A4B006D41EA /* Frameworks */,
+				183E0EC8193B0A4B006D41EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TMapsSDK;
+			productName = TMapsSDK;
+			productReference = 183E0ECA193B0A4B006D41EA /* TMapsSDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+		183E0EEA193B0A4B006D41EA /* TMapsSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 183E0EFF193B0A4B006D41EA /* Build configuration list for PBXNativeTarget "TMapsSDKTests" */;
+			buildPhases = (
+				183E0EE7193B0A4B006D41EA /* Sources */,
+				183E0EE8193B0A4B006D41EA /* Frameworks */,
+				183E0EE9193B0A4B006D41EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				183E0EF1193B0A4B006D41EA /* PBXTargetDependency */,
+			);
+			name = TMapsSDKTests;
+			productName = TMapsSDKTests;
+			productReference = 183E0EEB193B0A4B006D41EA /* TMapsSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		183E0EC2193B0A4B006D41EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = T;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Sergiu Miclea";
+				TargetAttributes = {
+					183E0EEA193B0A4B006D41EA = {
+						TestTargetID = 183E0EC9193B0A4B006D41EA;
+					};
+				};
+			};
+			buildConfigurationList = 183E0EC5193B0A4B006D41EA /* Build configuration list for PBXProject "TMapsSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 183E0EC1193B0A4B006D41EA;
+			productRefGroup = 183E0ECB193B0A4B006D41EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				183E0EC9193B0A4B006D41EA /* TMapsSDK */,
+				183E0EEA193B0A4B006D41EA /* TMapsSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		183E0EC8193B0A4B006D41EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				183E0EE6193B0A4B006D41EA /* Images.xcassets in Resources */,
+				183E0ED8193B0A4B006D41EA /* InfoPlist.strings in Resources */,
+				183E0EE1193B0A4B006D41EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		183E0EE9193B0A4B006D41EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				183E0EF7193B0A4B006D41EA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		183E0EC6193B0A4B006D41EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				183E0EDA193B0A4B006D41EA /* main.m in Sources */,
+				189D00F0193CDD0B00A07027 /* TMessager.m in Sources */,
+				189D00ED193CDCA600A07027 /* TMapEvents.m in Sources */,
+				183E0F0F193B1A55006D41EA /* TMap.m in Sources */,
+				183E0EDE193B0A4B006D41EA /* TAppDelegate.m in Sources */,
+				189D00E6193CDC3900A07027 /* TBaseLayer.m in Sources */,
+				180D290C193CCAEF00FDB0F1 /* TLatLng.m in Sources */,
+				189D00E7193CDC3900A07027 /* TTile.m in Sources */,
+				189D00E8193CDC3900A07027 /* TTileLayer.m in Sources */,
+				183E0EE4193B0A4B006D41EA /* TViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		183E0EE7193B0A4B006D41EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				183E0EF9193B0A4B006D41EA /* TMapsSDKTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		183E0EF1193B0A4B006D41EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 183E0EC9193B0A4B006D41EA /* TMapsSDK */;
+			targetProxy = 183E0EF0193B0A4B006D41EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		183E0ED6193B0A4B006D41EA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				183E0ED7193B0A4B006D41EA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		183E0EDF193B0A4B006D41EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				183E0EE0193B0A4B006D41EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		183E0EF5193B0A4B006D41EA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				183E0EF6193B0A4B006D41EA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		183E0EFA193B0A4B006D41EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		183E0EFB193B0A4B006D41EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		183E0EFD193B0A4B006D41EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TMapsSDK/TMapsSDK-Prefix.pch";
+				INFOPLIST_FILE = "TMapsSDK/TMapsSDK-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		183E0EFE193B0A4B006D41EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TMapsSDK/TMapsSDK-Prefix.pch";
+				INFOPLIST_FILE = "TMapsSDK/TMapsSDK-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		183E0F00193B0A4B006D41EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TMapsSDK.app/TMapsSDK";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TMapsSDK/TMapsSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TMapsSDKTests/TMapsSDKTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		183E0F01193B0A4B006D41EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TMapsSDK.app/TMapsSDK";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TMapsSDK/TMapsSDK-Prefix.pch";
+				INFOPLIST_FILE = "TMapsSDKTests/TMapsSDKTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		183E0EC5193B0A4B006D41EA /* Build configuration list for PBXProject "TMapsSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				183E0EFA193B0A4B006D41EA /* Debug */,
+				183E0EFB193B0A4B006D41EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		183E0EFC193B0A4B006D41EA /* Build configuration list for PBXNativeTarget "TMapsSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				183E0EFD193B0A4B006D41EA /* Debug */,
+				183E0EFE193B0A4B006D41EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		183E0EFF193B0A4B006D41EA /* Build configuration list for PBXNativeTarget "TMapsSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				183E0F00193B0A4B006D41EA /* Debug */,
+				183E0F01193B0A4B006D41EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 183E0EC2193B0A4B006D41EA /* Project object */;
+}
