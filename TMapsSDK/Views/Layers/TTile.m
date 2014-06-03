@@ -10,9 +10,9 @@
 
 @implementation TTile
 
-- (id)initWithImageUrl:(NSString *)imageUrl positionOnScreen:(CGPoint)position
+- (id)initWithImageUrl:(NSString *)imageUrl positionOnScreen:(TPoint *)position
 {
-    self = [super initWithFrame:CGRectMake(position.x, position.y, [TTile SIZE], [TTile SIZE])];
+    self = [super initWithFrame:CGRectMake([position.x floatValue], [position.y floatValue], [TTile SIZE], [TTile SIZE])];
     
     [self downloadImageWithURL:[NSURL URLWithString:imageUrl] completionBlock:^(BOOL succeeded, UIImage *image) {
         if (succeeded) {
@@ -41,7 +41,7 @@
 
 + (unsigned)SIZE
 {
-    return 256;
+    return 128;
 }
 
 @end

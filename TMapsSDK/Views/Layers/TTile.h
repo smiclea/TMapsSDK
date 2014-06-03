@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TPoint.h"
 
 @interface TTile : UIImageView
 
-- (id)initWithImageUrl:(NSString *)imageUrl positionOnScreen:(CGPoint)position;
+- (id)initWithImageUrl:(NSString *)imageUrl positionOnScreen:(TPoint *)position;
 
 + (unsigned)SIZE;
 @end

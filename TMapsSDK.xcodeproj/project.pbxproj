@@ -22,12 +22,15 @@
 		183E0EEF193B0A4B006D41EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183E0ED1193B0A4B006D41EA /* UIKit.framework */; };
 		183E0EF7193B0A4B006D41EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 183E0EF5193B0A4B006D41EA /* InfoPlist.strings */; };
 		183E0EF9193B0A4B006D41EA /* TMapsSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E0EF8193B0A4B006D41EA /* TMapsSDKTests.m */; };
-		183E0F0F193B1A55006D41EA /* TMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E0F0E193B1A55006D41EA /* TMap.m */; };
-		189D00E6193CDC3900A07027 /* TBaseLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D00E1193CDC3900A07027 /* TBaseLayer.m */; };
-		189D00E7193CDC3900A07027 /* TTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D00E3193CDC3900A07027 /* TTile.m */; };
-		189D00E8193CDC3900A07027 /* TTileLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D00E5193CDC3900A07027 /* TTileLayer.m */; };
 		189D00ED193CDCA600A07027 /* TMapEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D00EC193CDCA600A07027 /* TMapEvents.m */; };
 		189D00F0193CDD0B00A07027 /* TMessager.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D00EF193CDD0B00A07027 /* TMessager.m */; };
+		7D96BDD2193E406B003045F5 /* TMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D96BDD1193E406B003045F5 /* TMap.m */; };
+		7D96BDD9193E407B003045F5 /* TBaseLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D96BDD4193E407B003045F5 /* TBaseLayer.m */; };
+		7D96BDDA193E407B003045F5 /* TTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D96BDD6193E407B003045F5 /* TTile.m */; };
+		7D96BDDB193E407B003045F5 /* TTileLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D96BDD8193E407B003045F5 /* TTileLayer.m */; };
+		7D96BDDE193E4357003045F5 /* TMapInteraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D96BDDD193E4357003045F5 /* TMapInteraction.m */; };
+		7D96BDE1193E4F51003045F5 /* TBounds.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D96BDE0193E4F51003045F5 /* TBounds.m */; };
+		7D96BDE4193E53DE003045F5 /* TPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D96BDE3193E53DE003045F5 /* TPoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,18 +65,24 @@
 		183E0EF4193B0A4B006D41EA /* TMapsSDKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TMapsSDKTests-Info.plist"; sourceTree = "<group>"; };
 		183E0EF6193B0A4B006D41EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		183E0EF8193B0A4B006D41EA /* TMapsSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMapsSDKTests.m; sourceTree = "<group>"; };
-		183E0F0D193B1A55006D41EA /* TMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMap.h; path = /Users/sergiuoxigen/Desktop/TMapsSDK/TMapsSDK/Views/TMap.h; sourceTree = "<absolute>"; };
-		183E0F0E193B1A55006D41EA /* TMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TMap.m; path = /Users/sergiuoxigen/Desktop/TMapsSDK/TMapsSDK/Views/TMap.m; sourceTree = "<absolute>"; };
-		189D00E0193CDC3900A07027 /* TBaseLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBaseLayer.h; path = Views/Layers/TBaseLayer.h; sourceTree = "<group>"; };
-		189D00E1193CDC3900A07027 /* TBaseLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBaseLayer.m; path = Views/Layers/TBaseLayer.m; sourceTree = "<group>"; };
-		189D00E2193CDC3900A07027 /* TTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTile.h; path = Views/Layers/TTile.h; sourceTree = "<group>"; };
-		189D00E3193CDC3900A07027 /* TTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTile.m; path = Views/Layers/TTile.m; sourceTree = "<group>"; };
-		189D00E4193CDC3900A07027 /* TTileLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTileLayer.h; path = Views/Layers/TTileLayer.h; sourceTree = "<group>"; };
-		189D00E5193CDC3900A07027 /* TTileLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTileLayer.m; path = Views/Layers/TTileLayer.m; sourceTree = "<group>"; };
 		189D00EB193CDCA600A07027 /* TMapEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapEvents.h; sourceTree = "<group>"; };
 		189D00EC193CDCA600A07027 /* TMapEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMapEvents.m; sourceTree = "<group>"; };
 		189D00EE193CDD0B00A07027 /* TMessager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMessager.h; sourceTree = "<group>"; };
 		189D00EF193CDD0B00A07027 /* TMessager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMessager.m; sourceTree = "<group>"; };
+		7D96BDD0193E406B003045F5 /* TMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMap.h; path = TMapsSDK/Views/TMap.h; sourceTree = SOURCE_ROOT; };
+		7D96BDD1193E406B003045F5 /* TMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TMap.m; path = TMapsSDK/Views/TMap.m; sourceTree = SOURCE_ROOT; };
+		7D96BDD3193E407B003045F5 /* TBaseLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBaseLayer.h; path = TMapsSDK/Views/Layers/TBaseLayer.h; sourceTree = SOURCE_ROOT; };
+		7D96BDD4193E407B003045F5 /* TBaseLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBaseLayer.m; path = TMapsSDK/Views/Layers/TBaseLayer.m; sourceTree = SOURCE_ROOT; };
+		7D96BDD5193E407B003045F5 /* TTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTile.h; path = TMapsSDK/Views/Layers/TTile.h; sourceTree = SOURCE_ROOT; };
+		7D96BDD6193E407B003045F5 /* TTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTile.m; path = TMapsSDK/Views/Layers/TTile.m; sourceTree = SOURCE_ROOT; };
+		7D96BDD7193E407B003045F5 /* TTileLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTileLayer.h; path = TMapsSDK/Views/Layers/TTileLayer.h; sourceTree = SOURCE_ROOT; };
+		7D96BDD8193E407B003045F5 /* TTileLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTileLayer.m; path = TMapsSDK/Views/Layers/TTileLayer.m; sourceTree = SOURCE_ROOT; };
+		7D96BDDC193E4357003045F5 /* TMapInteraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMapInteraction.h; path = TMapsSDK/Views/TMapInteraction.h; sourceTree = SOURCE_ROOT; };
+		7D96BDDD193E4357003045F5 /* TMapInteraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TMapInteraction.m; path = TMapsSDK/Views/TMapInteraction.m; sourceTree = SOURCE_ROOT; };
+		7D96BDDF193E4F51003045F5 /* TBounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBounds.h; path = Model/TBounds.h; sourceTree = "<group>"; };
+		7D96BDE0193E4F51003045F5 /* TBounds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBounds.m; path = Model/TBounds.m; sourceTree = "<group>"; };
+		7D96BDE2193E53DE003045F5 /* TPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPoint.h; path = Model/TPoint.h; sourceTree = "<group>"; };
+		7D96BDE3193E53DE003045F5 /* TPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TPoint.m; path = Model/TPoint.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +115,10 @@
 				189D00EA193CDCA600A07027 /* Events */,
 				180D290A193CCAEF00FDB0F1 /* TLatLng.h */,
 				180D290B193CCAEF00FDB0F1 /* TLatLng.m */,
+				7D96BDDF193E4F51003045F5 /* TBounds.h */,
+				7D96BDE0193E4F51003045F5 /* TBounds.m */,
+				7D96BDE2193E53DE003045F5 /* TPoint.h */,
+				7D96BDE3193E53DE003045F5 /* TPoint.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -189,8 +202,10 @@
 			isa = PBXGroup;
 			children = (
 				189D00E9193CDC4F00A07027 /* Layers */,
-				183E0F0D193B1A55006D41EA /* TMap.h */,
-				183E0F0E193B1A55006D41EA /* TMap.m */,
+				7D96BDD0193E406B003045F5 /* TMap.h */,
+				7D96BDD1193E406B003045F5 /* TMap.m */,
+				7D96BDDC193E4357003045F5 /* TMapInteraction.h */,
+				7D96BDDD193E4357003045F5 /* TMapInteraction.m */,
 			);
 			name = Views;
 			path = /Users/sergiuoxigen/Desktop/TMapsSDK/TMapsSDK;
@@ -199,12 +214,12 @@
 		189D00E9193CDC4F00A07027 /* Layers */ = {
 			isa = PBXGroup;
 			children = (
-				189D00E0193CDC3900A07027 /* TBaseLayer.h */,
-				189D00E1193CDC3900A07027 /* TBaseLayer.m */,
-				189D00E2193CDC3900A07027 /* TTile.h */,
-				189D00E3193CDC3900A07027 /* TTile.m */,
-				189D00E4193CDC3900A07027 /* TTileLayer.h */,
-				189D00E5193CDC3900A07027 /* TTileLayer.m */,
+				7D96BDD3193E407B003045F5 /* TBaseLayer.h */,
+				7D96BDD4193E407B003045F5 /* TBaseLayer.m */,
+				7D96BDD5193E407B003045F5 /* TTile.h */,
+				7D96BDD6193E407B003045F5 /* TTile.m */,
+				7D96BDD7193E407B003045F5 /* TTileLayer.h */,
+				7D96BDD8193E407B003045F5 /* TTileLayer.m */,
 			);
 			name = Layers;
 			sourceTree = "<group>";
@@ -269,6 +284,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Sergiu Miclea";
 				TargetAttributes = {
+					183E0EC9193B0A4B006D41EA = {
+						DevelopmentTeam = VGHK54GSQ7;
+					};
 					183E0EEA193B0A4B006D41EA = {
 						TestTargetID = 183E0EC9193B0A4B006D41EA;
 					};
@@ -322,12 +340,15 @@
 				183E0EDA193B0A4B006D41EA /* main.m in Sources */,
 				189D00F0193CDD0B00A07027 /* TMessager.m in Sources */,
 				189D00ED193CDCA600A07027 /* TMapEvents.m in Sources */,
-				183E0F0F193B1A55006D41EA /* TMap.m in Sources */,
+				7D96BDD9193E407B003045F5 /* TBaseLayer.m in Sources */,
+				7D96BDDE193E4357003045F5 /* TMapInteraction.m in Sources */,
+				7D96BDE4193E53DE003045F5 /* TPoint.m in Sources */,
+				7D96BDD2193E406B003045F5 /* TMap.m in Sources */,
 				183E0EDE193B0A4B006D41EA /* TAppDelegate.m in Sources */,
-				189D00E6193CDC3900A07027 /* TBaseLayer.m in Sources */,
+				7D96BDE1193E4F51003045F5 /* TBounds.m in Sources */,
+				7D96BDDA193E407B003045F5 /* TTile.m in Sources */,
 				180D290C193CCAEF00FDB0F1 /* TLatLng.m in Sources */,
-				189D00E7193CDC3900A07027 /* TTile.m in Sources */,
-				189D00E8193CDC3900A07027 /* TTileLayer.m in Sources */,
+				7D96BDDB193E407B003045F5 /* TTileLayer.m in Sources */,
 				183E0EE4193B0A4B006D41EA /* TViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,9 +474,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TMapsSDK/TMapsSDK-Prefix.pch";
 				INFOPLIST_FILE = "TMapsSDK/TMapsSDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -467,9 +490,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TMapsSDK/TMapsSDK-Prefix.pch";
 				INFOPLIST_FILE = "TMapsSDK/TMapsSDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;

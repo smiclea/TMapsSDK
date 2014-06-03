@@ -40,8 +40,6 @@ static NSMutableArray * listeners; // of NSDictionary
             IMP imp = [[listener valueForKey:@"listener"] methodForSelector:selector];
             void (*func)(id, SEL, id) = (void *)imp;
             func([listener valueForKey:@"listener"], selector, object);
-            
-            //[listener performSelector:NSSelectorFromString([listener valueForKey:@"selectorName"]) withObject:object];
         }
     }
 }

@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "TLatLng.h"
+#import "TMapInteraction.h"
+#import "TBounds.h"
 
-@interface TMap : UIView
+@interface TMap : TMapInteraction
 
 @property (strong, nonatomic) TLatLng *location;
 @property (nonatomic, strong) NSNumber *zoomLevel;
-
+@property (readonly, strong, nonatomic) TBounds *pixelBounds;
 @end

@@ -11,10 +11,11 @@
 #import "TBaseLayer.h"
 #import "TMessager.h"
 #import "TMapEvents.h"
+#import "TPoint.h"
 
 @interface TMap()
 
-@property (nonatomic, strong) UIPanGestureRecognizer *panRecognizer;
+@property (strong, nonatomic, readwrite) TBounds *pixelBounds;
 
 @end
 
@@ -34,6 +35,38 @@
     return self;
 }
 
+//getCenterInPixels: function () {
+//    return this.project(this.getViewportCenter(), this.getZoom());
+//},
+
+//calculateTopLeft: function () {
+//    var half = this.getSize().divideBy(2);
+//    var topLeft = this.getCenterInPixels().substract(half).substract(this.getLayersPos());
+//    
+//    return topLeft;
+//},
+
+//getPixelBounds: function () {
+//    
+//    var topLeft = this.calculateTopLeft();
+//    return new T.Bounds(topLeft, topLeft.add(this.getSize()));
+//},
+
+- (TBounds *)pixelBounds
+{
+    TPoint *topLeft = [self calculateTopLeft];
+    return _pixelBounds;
+}
+
+- (TPoint *)calculateTopLeft
+{
+    TPoint *half = [[TPoint alloc] initWithCGSize:self.bounds.size];
+    [half divideBy:@2];
+    //TPoint *topLeft = [self getCenterInPixels];
+    
+    return [[TPoint alloc] initWithX:0 y:0];
+}
+
 - (void)setLocation:(TLatLng *)location
 {
     _location = location;
@@ -50,31 +83,8 @@
 
 - (void)setUpView
 {
-    [self setUpGestureRecognizers];
-    
     TTileLayer *layer = [[TTileLayer alloc] initWithMap:self];
     [self addLayerToMap:layer];
-}
-
-- (void)setUpGestureRecognizers
-{
-    self.panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panRecognized:)];
-    
-    [self addGestureRecognizer:self.panRecognizer];
-}
-
-- (void)panRecognized:(UIPanGestureRecognizer *)gesture
-{
-    if (gesture.state == UIGestureRecognizerStateChanged)
-    {
-        CGPoint translation = [self.panRecognizer translationInView:self];
-        [TMessager sendMessage:[TMapEvents MAP_IS_PANNING] withObject:[NSValue valueWithCGPoint:translation] from:self];
-    }
-    
-    if (gesture.state == UIGestureRecognizerStateEnded)
-    {
-        [TMessager sendMessage:[TMapEvents MAP_DID_PAN]];
-    }
 }
 
 - (void)addLayerToMap:(TBaseLayer *)layer

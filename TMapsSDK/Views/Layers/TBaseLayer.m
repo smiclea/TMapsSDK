@@ -10,6 +10,7 @@
 #import "TMessager.h"
 #import "TMapEvents.h"
 #import "TLatLng.h"
+#import "TPoint.h"
 
 @interface TBaseLayer()
 
@@ -39,11 +40,9 @@
 
 // Message handlers
 
-- (void)mapIsPanning:(NSValue *)translation
+- (void)mapIsPanning:(TPoint *)translation
 {
-    CGPoint cgTranslation = [translation CGPointValue];
-    
-    self.transform = CGAffineTransformMakeTranslation(self.currentPosition.x + cgTranslation.x, self.currentPosition.y + cgTranslation.y);
+    self.transform = CGAffineTransformMakeTranslation(self.currentPosition.x + [translation.x floatValue], self.currentPosition.y + [translation.y floatValue]);
 }
 
 - (void)mapDidPan
